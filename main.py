@@ -15,5 +15,5 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send("Pong!")
 
-discordToken = os.getenv('DISCORD_TOKEN')  # Update to read from environment
+discordToken = os.getenv('AAUXGibHrjkpBR1TK__-IqjbfCVz0PFv')  # Update to read from environment
 bot.run(discordToken)
