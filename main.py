@@ -1,19 +1,16 @@
-import discord
+# bot.py
 import os
-from discord.ext import commands
 
-intents = discord.Intents.default()
-intents.messages = True
+import discord
+from dotenv import load_dotenv
 
-bot = commands.Bot(command_prefix='!', intents=intents)
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
 
-@bot.event
+client = discord.Client()
+
+@client.event
 async def on_ready():
-    print(f'Logged in as {bot.user.name} ({bot.user.id})')
+    print(f'{client.user} has connected to Discord!')
 
-@bot.command()
-async def ping(ctx):
-    await ctx.send("Pong!")
-
-discordToken = os.getenv('DISCORD_TOKEN')  # Update to read from environment
-bot.run(discordToken)
+client.run(TOKEN)
