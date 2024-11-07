@@ -14,3 +14,7 @@ I plan to add a semi feature rich log applet to this
 The server I'm hosting this on has a free option, but to prevent going over the monthly limits
 I will be setting a limit on how many times a day someone can access the database (i.e. setting their Activision ID, getting an Activision ID...)
 This will not effect accessing logs as the logs will be stored locally on the server
+##
+
+All of the app files are stored in the app folder  
+Anything outside of that is for a server website to load the bot (Haven't gotten that part working quite yet)
