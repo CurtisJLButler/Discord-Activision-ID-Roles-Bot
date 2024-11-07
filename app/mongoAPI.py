@@ -11,10 +11,10 @@ try:
   
 # return a friendly error if a URI error is thrown 
 except pymongo.errors.ConfigurationError:
-  print("An Invalid URI host error was received. Is your Atlas host name correct in your connection string?")
+  log.log_message("An Invalid URI host error was received. Is your Atlas host name correct in your connection string?")
   sys.exit(1)
 else:
-   print("Succesfuly connected to MongoDB")
+   log.log_message("Succesfuly connected to MongoDB")
 
 # use a database named "myDatabase"
 db = client.battleBuddiesDB
@@ -40,12 +40,10 @@ def post(user, id):
 
     # return a friendly error if the operation fails
     except pymongo.errors.OperationFailure:
-        print("An authentication error was received. Are you sure your database user is authorized to perform write operations?")
+        log.log_message("An authentication error was received. Are you sure your database user is authorized to perform write operations?")
         sys.exit(1)
     else:
-        print("I inserted %x documents." %(result.inserted_id))
-
-    print("\n")
+        log.log_message("I inserted %s documents." % (str(result.inserted_id)))
 
 # # FIND DOCUMENTS
 # #

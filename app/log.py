@@ -72,7 +72,7 @@ def get_logs(start_time_str, end_time_str):
                 if start_time <= log_time <= end_time:
                     # Append only the string values (timestamp and message)
                     logs_in_range.append(f"[{log['timestamp']}]  {log['message']}")
-    for log in logs:
+    for log in logs_in_range:
         print(log)
     return logs_in_range
 
