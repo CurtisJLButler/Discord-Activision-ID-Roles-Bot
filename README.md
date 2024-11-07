@@ -11,6 +11,6 @@ if you type /getid without specifying a user, it will return your Activision ID 
 ## Future stuff
 I plan to add a semi feature rich log applet to this
   
-The server I'm hosting this on has a free option, but to prevent going over the monthly limits
+The server I'm hosting this on has a free option, but to prevent going over the monthly limits  
 I will be setting a limit on how many times a day someone can access the database (i.e. setting their Activision ID, getting an Activision ID...)  
 This will not effect accessing logs as the logs will be stored locally on the server
