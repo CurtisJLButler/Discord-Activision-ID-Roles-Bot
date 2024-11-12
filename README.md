@@ -5,7 +5,7 @@ Creates roles for users to display Activion IDs
 This saves the username of the account you use the command along with your Activision ID (replace "(ActivisionID)" with your actual Activision ID)
 
 ### /getid (optional:username)
-This grabs the Activision ID of the discord user (Has to be someone in this server that has set their Activision ID using /setid as above)  
+This grabs the Activision ID of the discord user if it is in the database (Has to be someone in this server that has set their Activision ID using /setid as above)  
 if you type /getid without specifying a user, it will return your Activision ID instead of someone elses
 
 ### /updateid (ActivisionID)
