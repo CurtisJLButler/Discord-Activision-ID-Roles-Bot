@@ -4,3 +4,4 @@
 log.json
 *log.json
 *.git
+*__pycache__
